@@ -165,7 +165,7 @@ void time_textPopCallback(void *ptr)
 void button_teplica_1PopCallback(void *ptr)
 {
   screen = 1;
- // digitalWrite(13,HIGH);
+  dbSerialPrintln("screen 1 ");
   page_teplica.show();
   refresh_display();
 }
@@ -173,6 +173,7 @@ void button_teplica_1PopCallback(void *ptr)
 void button_teplica_2PopCallback(void *ptr)
 {
   screen = 2;
+  dbSerialPrintln("screen 2 ");
   page_teplica.show();
   refresh_display();
 }
@@ -180,6 +181,7 @@ void button_teplica_2PopCallback(void *ptr)
 void button_teplica_3PopCallback(void *ptr)
 {
   screen = 3;
+  dbSerialPrintln("screen 3 ");
   page_teplica.show();
   refresh_display();
 }
